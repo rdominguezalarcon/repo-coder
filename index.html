@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Home - RUDA</title>
 </head>
+
 <body>
-    <header>
-        <h1><a href="index.html">RUDA - Recetas saludables</a></h1>
-        <nav>
-            <a href="./pages/recetas.html">Recetas</a>|
-            <a href="./pages/recetasVeganas.html">Recetas veganas</a>|
-            <a href="./pages/recetasDulces.html">Recetas dulces</a>|
-            <a href="./pages/tips.html">Tips</a> |          
-            <a href="./pages/contacto.html">Contacto</a>
-        </nav>
-    </header>
+    <div class="bodyIndex">
+        <div class="navegador">
+            <nav class="navbar navbar-expand-lg navbar-light bg-orange text-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">RUDA - Recetas saludables</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" text-white>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/recetasVeganas.html">Recetas veganas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/recetasDulces.html">Recetas dulces</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/tips.html">Tips</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-    <main>
-        <h1 id="h1Index">¿Quienes somos?</h1>
-        <p id="pIndex">Somos un grupo de personas que intentamos llevar un estilo de vida mas saludable sin sufrir o obligarnos hacer
-        dietas que a la larga uno va rompiendo. El sentido de esta pagina es mejorar los habitos de salud sin que parezca una tortura o sufrimiento.
-        Estamos aca para mejorar tus habitos que a medida que pasen los años lo agradeceras. Cuerpo sano es igual a mente sana.
-        </p>
-        <h1> Ultima receta subida</h1>
-        <h3>Sopa de zapallo a la crema</h3>
-        <img src="./images/sopa.png" alt="Sopa">
-        <ul>
-            <li>Zapallo</li>
-            <li>cebolla</li>
-            <li>Tomate</li>
-            <li>Queso rallado</li>            
-            <li>Sal y aceite a gusto</li>
-        </ul>
-    </main>
+        <section class="nosotros">
+            <h1 id="h1Index">¿Quienes somos?</h1>
+            <p id="pIndex">Bienvenidos a RUDA, tu espacio para recetas saludables y deliciosas.
+                Nos apasiona ayudarte a llevar un estilo de vida equilibrado y lleno de sabor. En nuestra web
+                encontrarás una amplia variedad de recetas saludables, dulces irresistibles pero nutritivos, y opciones
+                veganas creadas con amor y dedicación.
+                Nuestro compromiso es brindarte no solo las mejores recetas, sino también consejos prácticos para
+                cocinar de manera eficiente, conservar tus alimentos y aprovechar cada ingrediente al máximo. Queremos
+                acompañarte en cada paso, desde la elección de los ingredientes hasta el momento en que compartes tus
+                creaciones con tus seres queridos.
+                ¡Descubre cómo comer saludable puede ser fácil, delicioso y accesible para todos!
+            </p>
+        </section>
+        <section class="receta">
+            <h1> Ultima receta subida</h1>
+            <h3>Sopa de zapallo a la crema</h3>
+            <img src="./images/sopa.png" alt="Sopa">
+            <ul>
+                <li>Zapallo</li>
+                <li>cebolla</li>
+                <li>Tomate</li>
+                <li>Queso rallado</li>
+                <li>Sal y aceite a gusto</li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>© 2025 RUDA - administrador@ruda-recetas.com<br>
-            Ituzaingo, Buenos Aires Argentina - CP 1714
-        </p>
-    </footer>
+        <footer>
+            <p>© 2025 RUDA - administrador@ruda-recetas.com<br>
+                Ituzaingo, Buenos Aires Argentina - CP 1714
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
