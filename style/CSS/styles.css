@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: orange;
+  color: rgb(224, 211, 211);
+  font-family: sans-serif;
+  grid-area: header;
+}
+header h1 {
+  text-align: left;
+  color: whitesmoke;
+  margin-left: 10px;
+  margin: 0px;
+}
+
+footer {
+  text-align: center;
+  background-color: orangered;
+  color: whitesmoke;
+  grid-area: footer;
+}
+
+.bodyIndex {
+  display: grid;
+  grid-template-areas: "navegador " "nosotros " "receta " "linkVolver " "footer ";
+}
+
+.bodyRecetas {
+  display: grid;
+  grid-template-areas: "navegador navegador" "tituloP tituloP" "receta receta " "receta receta " "receta receta " "linkVolver linkVolver" "footer footer ";
+}
+
+.bodyTips {
+  display: grid;
+  grid-template-areas: "navegador navegador" "tituloP tituloP" "tips tips" "linkVolver linkVolver" "footer footer";
+  grid-template-rows: auto auto auto 1fr auto auto;
+}
+
+.tituloV {
+  grid-area: tituloV;
+}
+
+.navegador {
+  grid-area: navegador;
+}
+
+nav {
+  text-align: right;
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight: bold;
+  grid-area: nav;
+  background-color: orange;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#receta {
+  grid-area: receta;
+}
+
+label {
+  width: 150px;
+  margin-right: 10px;
+  font-family: sans-serif;
+}
+
+input,
+textarea {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+form {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.indicacionesContacto {
+  margin-left: 10px;
+}
+
+#linkVolver {
+  color: black;
+  font-family: sans-serif;
+  margin-left: 5px;
+  font-weight: bold;
+  text-align: right;
+  grid-area: linkVolver;
+  margin-right: 20px;
+}
+
+img {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 300px;
+  width: 400px;
+}
+
+ul {
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  grid-area: tituloP;
+}
+
+h3 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+#h1Index {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#pIndex {
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .bodyRecetas {
+    display: grid;
+    grid-template-areas: "navegador " "tituloP " "receta  " "receta  " "receta  " "receta  " "receta  " "linkVolver " "footer  ";
+  }
+  /*Agregue un margin para que los elementos tengan un espacio a los margenes al bajar los pixeles*/
+  .receta {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .bodyRecetas {
+    display: grid;
+    grid-template-areas: "navegador navegador navegador" "tituloP tituloP tituloP " "receta receta receta " "receta receta receta " "linkVolver linkVolver linkVolver " "footer footer footer";
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

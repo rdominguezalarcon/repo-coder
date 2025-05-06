@@ -1,0 +1,9 @@
+@use "../base/vars" as vars;
+
+footer {
+    text-align: center;
+    background-color: vars.$colorFooter;
+    color: vars.$textoColorSecundario;
+    grid-area: footer;
+
+}

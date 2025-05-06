@@ -1,0 +1,16 @@
+@use "../base/vars" as vars;
+
+header {
+    background-color: vars.$colorLogo ;
+    color: rgb(224, 211, 211);
+    font-family: vars.$fuentePrincipal;
+    grid-area: header;
+
+    h1 {
+        text-align: left;
+        color: vars.$textoColorSecundario;
+        margin-left: 10px;
+        margin: 0px;
+    }
+
+}
